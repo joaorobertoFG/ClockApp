@@ -77,7 +77,13 @@ function clock() {
       break;
   }
   //Am / PM
-  if (hora >= 5 && hora <= 11) {
+  if (hora >= 0 && hora <= 5) {
+    document.querySelector("#am-pm").innerHTML = `AM`;
+    cardData.classList.remove("dia");
+    cardData.classList.add("noite");
+    document.querySelector(".lua-hidden").style.display = "flex";
+    document.querySelector(".sol-hidden").style.display = "none";
+  } else if (hora >= 6 && hora <= 11) {
     document.querySelector("#am-pm").innerHTML = `AM`;
     cardData.classList.remove("noite");
     cardData.classList.add("dia");
