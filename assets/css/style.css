@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+:root {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  --primary-color: linear-gradient(
+    to right top,
+    #00160f,
+    #031715,
+    #091718,
+    #101719,
+    #151719,
+    #18191a,
+    #1a1a1b,
+    #1c1c1c,
+    #1f1f1f,
+    #212121,
+    #242424,
+    #272727
+  );
+}
+
+html {
+  background-image: var(--primary-color);
+}
+
+.card {
+  width: 320px;
+  height: 170px;
+  background: rgb(17, 4, 134);
+  border-radius: 15px;
+  box-shadow: rgb(0,0,0,0.7) 5px 10px 50px ,rgb(0,0,0,0.7) -5px 0px 250px;
+  display: flex;
+  color: white;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  align-items: center;
+  gap: 10px;
+}
+
+.sol-hidden {
+  display: none;
+}
+
+.lua-hidden {
+  display: none;
+}
+
+.noite {
+  background: linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));
+}
+
+.dia {
+  background: linear-gradient(to right, rgb(167, 53, 0), rgb(141, 97, 2));
+
+}
+
+.card:hover {
+  box-shadow: rgb(0,0,0) 15px 20px 70px ,rgb(0,0,0) -5px 0px 250px;
+  transform: scale(1.1);
+}
+
+.time-text {
+  font-size: 50px;
+  margin-top: 0px;
+  margin-left: 15px;
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.time-sub-text {
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.day-text {
+  font-size: 20px;
+  margin-top: 0px;
+  margin-left: 15px;
+  font-weight: 500;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#segundos {
+  font-size: 30px;
+}
